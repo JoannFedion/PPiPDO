@@ -6,12 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Service" />
+        <module name="CurrencyRateProvider" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Service" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="CurrencyRateProvider" options="-parameters" />
       <module name="Service" options="-parameters" />
     </option>
   </component>
